@@ -1,0 +1,189 @@
+@use postcss-nested;
+@import 'https://fonts.googleapis.com/css?family=Allerta+Stencil';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');body{
+    background-color:#0D45E4;
+    margin: 0px;
+}
+h1,h3,h4,h5,h6,p{
+    color: #fff;
+}
+h1{
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+}
+hr{
+    background-color: #fff;
+}
+.navbar a{
+    margin: 5px;
+}
+.navbar-nav a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+.logo{
+    margin-right: 220px;
+}
+.nav-link:hover{
+    text-decoration: underline;
+}
+.for-teacher{
+    background-color: #13D17A;
+    color: #fff;
+}
+.for-teacher:hover{
+    background-color: darkgreen;
+    color: #fff;
+}
+.for-org:hover{
+    color: #0D45E4;
+}
+.btn-outline-secondary{
+    border: #fff solid;
+    color: #fff;
+}
+.btn-outline-secondary:hover{
+    background-color: #fff;
+    color:black;
+    border: #fff;
+}
+.for-org{
+    background-color: #fbf1a9;
+    color: gray;
+}
+.btn-lg{
+    margin: auto 15px;
+}
+.logo{
+    max-width: 150px;
+}
+.far, .fal{
+    color: #fff;
+    margin-right: 5px;
+}
+.head{
+    margin-top: 100px;
+}
+.tweets{
+    padding-top: 50px;;
+}
+.featured h4{
+    text-align: center;
+}
+.company img{
+    width: 100px;
+}
+.million p{
+    text-align: center;
+}
+.instructions{
+    margin: 55px;
+    padding: 7px;
+}
+.instructions a{
+    text-decoration: none;
+    color: #fff;
+}
+.green{
+    border-bottom: 1px solid #1AD98A;
+}
+.green-fa{
+    color: #1AD98A;
+}
+.green:hover{
+    color: #1AD98A;
+}
+.orange{
+    border-bottom: 1px solid #FF8C47;
+}
+.orange-fa{
+    color: #FF8C47;
+}
+.orange:hover{
+    color:#FF8C47;
+}
+
+.letter{
+    height: 650px;
+    width: 550px;
+    margin:50px 0 0 110px;
+    box-shadow: -60px 0px 100px -90px #000000, 60px 0px 100px -90px #000000;
+    background-color: #f2f2fc;        
+    position: sticky;
+}
+.letter h6{
+    color: #000000;
+}
+div.letter {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 50px;
+  }
+  .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #19456b;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+.footer .container .row .col-lg-6 a{
+    text-decoration: none;
+}
+.footer .container .row .col-lg-6 a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.footer .container .row .col-lg-6
